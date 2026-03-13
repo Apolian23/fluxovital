@@ -8,12 +8,10 @@ if (!isset($_SESSION['usuario_id'])) {
 
 require_once __DIR__ . '/../config/db.php';
 
-// Inicializa variáveis e mensagens de erro
 $nome = '';
 $email = '';
 $errors = [];
 
-// Busca dados atuais do usuário
 $query = $conn->prepare("SELECT nome, email FROM usuario WHERE id = ?");
 $query->bind_param("i", $_SESSION['usuario_id']);
 if ($query->execute()) {
@@ -32,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nome = trim($_POST['nome'] ?? '');
     $email = trim($_POST['email'] ?? '');
 
-    // Validações
+
     if (empty($nome)) {
         $errors['nome'] = 'O nome não pode ficar em branco.';
     }
@@ -40,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $errors['email'] = 'Informe um e-mail válido.';
     }
 
-    // Se válido, atualiza
+
     if (empty($errors)) {
         $update = $conn->prepare("UPDATE usuario SET nome = ?, email = ? WHERE id = ?");
         $update->bind_param("ssi", $nome, $email, $_SESSION['usuario_id']);
@@ -57,7 +55,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
-<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
