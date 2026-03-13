@@ -4,12 +4,10 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "fluxovital";
-$port = 3306;  // adicione a porta desejada aqui
+$port = 3306; 
 
-// Criar conexão com porta
 $conn = new mysqli($servername, $username, $password, $dbname, $port);
 
-// Checar conexão
 if ($conn->connect_error) {
     die("Erro na conexão: " . $conn->connect_error);
 }
