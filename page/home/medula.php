@@ -337,7 +337,7 @@
       margin-top: 0.3rem;
     }
 
-    /* Sections */
+
     .section {
       max-width: 1200px;
       margin: 0 auto;
@@ -377,7 +377,6 @@
       line-height: 1.7;
     }
 
-    /* Cards */
     .cards {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -425,7 +424,6 @@
       font-size: 1rem;
     }
 
-    /* Process */
     .process {
       background: linear-gradient(135deg, var(--bg-soft), rgba(255,243,242,0.5));
       padding: 5rem 1.5rem;
@@ -556,7 +554,6 @@
       color: var(--white);
     }
 
-    /* Hospitals Section */
     .hospitals {
       background: linear-gradient(135deg, var(--primary), var(--primary-dark));
       color: var(--white);
@@ -660,7 +657,7 @@
       display: none;
     }
 
-    /* Footer */
+
     .footer {
       background: linear-gradient(135deg, #9d040eff 0%, #bb0303ff 100%);
       color: var(--white);
@@ -710,7 +707,6 @@
       opacity: 0.8;
     }
 
-    /* Back to top */
     .back-top {
       position: fixed;
       right: 2rem;
@@ -740,7 +736,6 @@
       display: flex;
     }
 
-    /* Responsive */
     @media (max-width: 768px) {
       .nav-links { display: none; }
       .mobile-toggle { display: flex; align-items: center; justify-content: center; }
@@ -756,7 +751,7 @@
   </style>
 </head>
 <body>
-  <!-- Navbar -->
+
   <nav class="navbar">
     <div class="nav-container">
       <a href="/fluxovital/page/home/index.php" class="logo">
@@ -788,7 +783,6 @@
     </div>
   </nav>
 
-  <!-- Hero -->
   <section class="hero" id="home">
     <div class="hero-content">
       <h1>Doe Medula Óssea, Salve Vidas</h1>
@@ -804,7 +798,6 @@
     </div>
   </section>
 
-  <!-- Stats -->
   <section class="stats">
     <div class="stats-grid">
       <div class="stat">
@@ -830,7 +823,7 @@
     </div>
   </section>
 
-  <!-- About -->
+
   <section class="section" id="about">
     <h2 class="section-title">Por que Doar?</h2>
     <p class="section-subtitle">A medula óssea é essencial para a produção de células sanguíneas e pode salvar vidas de pessoas com leucemia, linfomas e outras doenças graves.</p>
@@ -853,7 +846,6 @@
     </div>
   </section>
 
-  <!-- Process -->
   <section class="process" id="process">
     <h2 class="section-title">Como Funciona</h2>
     <p class="section-subtitle">Um processo simples e seguro que pode transformar vidas</p>
@@ -881,7 +873,6 @@
     </div>
   </section>
 
-  <!-- Hospitals Section -->
   <section class="hospitals" id="hospitals">
     <div class="hospitals-container">
       <h2>Encontre um Centro de Transplante</h2>
@@ -921,7 +912,6 @@
           </div>
         </div>
 
-        <!-- Hospital 2 -->
         <div class="hospital-card" data-name="hospital criança são luis centro silva jardim pediatria transplante">
           <h3>Hospital da Criança - São Luís</h3>
           <div class="hospital-info">
@@ -942,7 +932,6 @@
           </div>
         </div>
 
-        <!-- Hospital 3 -->
         <div class="hospital-card" data-name="centro hematologia hemomar cohama daniel touche transplante medula sangue">
           <h3>Centro de Hematologia HEMOMAR</h3>
           <div class="hospital-info">
@@ -963,7 +952,7 @@
           </div>
         </div>
 
-        <!-- Hospital 4 -->
+
         <div class="hospital-card" data-name="hospital são domingos centro nascimento moraes transplante oncologia hematologia">
           <h3>Hospital São Domingos</h3>
           <div class="hospital-info">
@@ -984,7 +973,7 @@
           </div>
         </div>
 
-        <!-- Hospital 5 -->
+  
         <div class="hospital-card" data-name="hospital carlos macieira renascença transplante turu cirurgia">
           <h3>Hospital Carlos Macieira</h3>
           <div class="hospital-info">
@@ -1005,7 +994,7 @@
           </div>
         </div>
 
-        <!-- Hospital 6 -->
+  
         <div class="hospital-card" data-name="hospital socorrão djalma marques socorro urgência emergência">
           <h3>Hospital de Urgência Dr. Clementino Moura (Socorrão II)</h3>
           <div class="hospital-info">
@@ -1034,7 +1023,6 @@
     </div>
   </section>
 
-  <!-- FAQ -->
   <section class="section" id="faq">
     <h2 class="section-title">Perguntas Frequentes</h2>
     <p class="section-subtitle">Esclareça suas principais dúvidas sobre a doação de medula óssea</p>
@@ -1078,7 +1066,6 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="footer-grid">
       <div>
@@ -1118,24 +1105,21 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2024 Fluxo Vital. Todos os direitos reservados. Desenvolvido com ❤️ para salvar vidas.</p>
+      <p>&copy; 2025 Fluxo Vital. Todos os direitos reservados. Desenvolvido com ❤️ para salvar vidas.</p>
     </div>
   </footer>
 
-  <!-- Back to Top -->
   <button class="back-top" id="backTop">
     <i class="fas fa-arrow-up"></i>
   </button>
 
   <script>
-    // Navbar scroll effect
     const navbar = document.querySelector('.navbar');
     
     window.addEventListener('scroll', () => {
       navbar.classList.toggle('scrolled', window.pageYOffset > 50);
     });
 
-    // Mobile menu
     const toggle = document.getElementById('menuToggle');
     const menu = document.getElementById('mobileMenu');
     
@@ -1145,7 +1129,6 @@
       icon.className = menu.classList.contains('active') ? 'fas fa-times' : 'fas fa-bars';
     });
 
-    // Close menu on link click
     menu.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         menu.classList.remove('active');
@@ -1153,7 +1136,6 @@
       });
     });
 
-    // FAQ accordion
     document.querySelectorAll('.faq-question').forEach(btn => {
       btn.addEventListener('click', () => {
         const item = btn.parentElement;
@@ -1165,7 +1147,6 @@
       });
     });
 
-    // Back to top
     const backTop = document.getElementById('backTop');
     
     window.addEventListener('scroll', () => {
@@ -1176,7 +1157,6 @@
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
-    // Smooth scroll
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', e => {
         const href = anchor.getAttribute('href');
@@ -1194,7 +1174,6 @@
       });
     });
 
-    // Search hospitals function
     function searchHospitals() {
       const searchValue = document.getElementById('searchLocation').value.toLowerCase().trim();
       const hospitalCards = document.querySelectorAll('.hospital-card');
@@ -1213,7 +1192,7 @@
         }
       });
       
-      // Show/hide no results message
+  
       if (visibleCount === 0) {
         noResults.style.display = 'block';
       } else {
@@ -1221,12 +1200,11 @@
       }
     }
 
-    // Search on Enter key
     document.getElementById('searchLocation').addEventListener('keypress', (e) => {
       if (e.key === 'Enter') searchHospitals();
     });
 
-    // Real-time search
+
     document.getElementById('searchLocation').addEventListener('input', searchHospitals);
   </script>
 </body>
