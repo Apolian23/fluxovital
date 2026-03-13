@@ -8,10 +8,8 @@ session_start();
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Relatórios - Fluxo Vital</title>
 
-  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Estilo personalizado -->
   <style>
     body {
       background-color: #ffeef0;
@@ -60,17 +58,14 @@ session_start();
 </head>
 <body>
 
-  <!-- Cabeçalho -->
   <div class="header">
     <h1>Relatórios e Estatísticas</h1>
     <p class="lead">Acesse relatórios, gráficos e planilhas sobre atualizações do sistema de sangue, medula e leite materno.</p>
   </div>
 
-  <!-- Seções de relatórios -->
   <div class="container my-5">
     <div class="row g-4">
       
-      <!-- Relatórios de Sangue -->
       <div class="col-md-4">
         <div class="card p-4">
           <h5 class="card-title text-danger">Relatórios de Sangue</h5>
@@ -79,7 +74,6 @@ session_start();
         </div>
       </div>
 
-      <!-- Relatórios de Medula -->
       <div class="col-md-4">
         <div class="card p-4">
           <h5 class="card-title text-danger">Relatórios de Medula</h5>
@@ -88,7 +82,6 @@ session_start();
         </div>
       </div>
 
-      <!-- Relatórios de Leite Materno -->
       <div class="col-md-4">
         <div class="card p-4">
           <h5 class="card-title text-danger">Relatórios de Leite Materno</h5>
@@ -100,7 +93,6 @@ session_start();
     </div>
   </div>
 
-  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
