@@ -5,9 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Escolha seu Perfil - Fluxo Vital</title>
 
-  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- Bootstrap Icons -->
+  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
 
   <style>
@@ -494,7 +493,6 @@
 </head>
 <body>
 
-  <!-- Navbar -->
    <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a class="logo" href="/fluxovital/page/home/index.php">
@@ -532,7 +530,6 @@
     </div>
   </nav>
 
-  <!-- Main Content -->
   <main class="container">
     <div class="hero-section">
       <h1>Como deseja continuar?</h1>
@@ -573,7 +570,6 @@
     </div>
   </main>
 
-  <!-- Footer -->
   <footer>
     <div class="footer-content">
       <i class="bi bi-heart-fill footer-icon"></i>
@@ -582,11 +578,9 @@
     </div>
   </footer>
 
-  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   
   <script>
-    // Navbar scroll effect
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
       if (window.scrollY > 50) {
@@ -596,7 +590,6 @@
       }
     });
 
-    // Mobile menu toggle
     const mobileToggle = document.getElementById('mobileToggle');
     const mobileMenu = document.getElementById('mobileMenu');
     
