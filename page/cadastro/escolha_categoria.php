@@ -8,13 +8,10 @@ session_start();
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Escolha de Categoria de Doação - Fluxo Vital</title>
 
-  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   
-  <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
 
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
   <style>
@@ -58,7 +55,6 @@ session_start();
       pointer-events: none;
     }
 
-    /* Navbar Styles */
     .navbar {
       background: linear-gradient(135deg, #9d040e 0%, #7B1B1B 100%);
       padding: 1rem 0;
@@ -275,7 +271,6 @@ session_start();
       margin: 0 auto;
     }
 
-    /* Cards Grid */
     .cards-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -643,7 +638,6 @@ session_start();
 </head>
 <body>
 
-  <!-- Navbar -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
       <a href="/fluxovital/" class="logo">
@@ -679,7 +673,6 @@ session_start();
     </div>
   </nav>
 
-  <!-- Main Content -->
   <main class="container">
     <div class="hero-section">
       <h1>Escolha sua Categoria de Doação</h1>
@@ -689,7 +682,6 @@ session_start();
     <form method="POST" action="selecionar_tipo.php">
       <div class="cards-grid">
         
-        <!-- Card: Doação de Sangue -->
         <div class="donation-card">
           <div class="icon-container">
             <i class="fa-solid fa-droplet"></i>
@@ -702,7 +694,6 @@ session_start();
           </button>
         </div>
 
-        <!-- Card: Doação de Médula Óssea -->
         <div class="donation-card">
           <div class="icon-container">
             <i class="fa-solid fa-heart-pulse"></i>
@@ -715,7 +706,6 @@ session_start();
           </button>
         </div>
 
-        <!-- Card: Doação de Leite Materno -->
         <div class="donation-card">
           <div class="icon-container">
             <i class="fa-solid fa-person-breastfeeding"></i>
@@ -731,7 +721,6 @@ session_start();
       </div>
     </form>
 
-    <!-- Info Banner -->
     <div class="info-banner">
       <div class="info-banner-content">
         <i class="bi bi-shield-check info-banner-icon"></i>
@@ -742,7 +731,6 @@ session_start();
     </div>
   </main>
 
-  <!-- Footer -->
   <footer>
     <div class="footer-content">
       <i class="bi bi-heart-fill footer-icon"></i>
@@ -751,11 +739,10 @@ session_start();
     </div>
   </footer>
 
-  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   
   <script>
-    // Navbar scroll effect
+
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
       if (window.scrollY > 50) {
@@ -765,7 +752,6 @@ session_start();
       }
     });
 
-    // Mobile menu toggle
     const mobileToggle = document.getElementById('mobileToggle');
     const mobileMenu = document.getElementById('mobileMenu');
     
