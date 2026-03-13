@@ -5,8 +5,8 @@
   margin-top: 21px; 
 }
 .container-main {
-  max-width: 1600px;    /* aumentei de 1440px para 1600px para ficar mais largo */
+  max-width: 1600px;   
   width: 100%;
   margin: auto;
-  padding: 20px 40px;   /* mantive espaçamento interno, um pouco mais na horizontal */
+  padding: 20px 40px;  
 }
