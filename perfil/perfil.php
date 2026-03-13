@@ -8,7 +8,6 @@ if (!isset($_SESSION['usuario_id'])) {
 
 require_once __DIR__ . '/../config/db.php';
 
-// Busca dados do usuário
 $usuario = [];
 $query = $conn->prepare("SELECT nome, email, data_criacao FROM usuario WHERE id = ?");
 $query->bind_param("i", $_SESSION['usuario_id']);
@@ -20,7 +19,6 @@ if ($query->execute()) {
     die("Erro ao buscar dados do usuário: " . $conn->error);
 }
 
-// Define tipo de conta (ajuste conforme tabelas existentes)
 $tipoConta = 'Usuário comum';
 ?>
 
