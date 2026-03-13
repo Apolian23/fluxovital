@@ -994,7 +994,6 @@
     </div>
   </section>
 
-  <!-- FAQ Section - NOVO CÓDIGO -->
   <section id="faq">
     <h2 class="section-title">Perguntas Frequentes</h2>
     <div class="faq-container">
@@ -1114,7 +1113,7 @@
       });
     });
 
-    // FAQ accordion - NOVO CÓDIGO
+
     document.querySelectorAll('.faq-question').forEach(btn => {
       btn.addEventListener('click', () => {
         const item = btn.parentElement;
