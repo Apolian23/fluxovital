@@ -75,7 +75,7 @@
 
     <div class="container">
         <div class="row g-4">
-            <!-- Pessoa 1 -->
+
             <div class="col-md-4">
                 <div class="card p-3">
                      <img src="/fluxovital/assets/images/Captura de Tela (490).png" alt="Foto de Gustavo" class="img-fluid rounded mb-3" style="height: 300px; object-fit: cover; width: 250%;">
@@ -86,7 +86,7 @@
                 </div>
             </div>
 
-            <!-- Pessoa 2 -->
+
             <div class="col-md-4">
                 <div class="card p-3">
                      <img src="/fluxovital/assets/images/Captura de Tela (489).png" alt="Foto de Lucas" class="img-fluid rounded mb-3" style="height: 300px; object-fit: cover; width: 250%;">
@@ -97,7 +97,6 @@
                 </div>
             </div>
 
-            <!-- Pessoa 3 -->
              <div class="col-md-4">
     <div class="card p-3">
         <img src="https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/473400595_1467109090913090_1142170497294868577_n.jpg?ccb=11-4&oh=01_Q5Aa2wGIMYkH8MhgzkvxmgJjtYL0cxoBFkcjFHMDBZlgRvY9EA&oe=6903AEA3&_nc_sid=5e03e0&_nc_cat=110" alt="Foto de Gabigol" class="img-fluid rounded mb-3" style="height: 300px; object-fit: cover; width: 250%;">
@@ -113,7 +112,7 @@
     </div>
 
     <div class="footer">
-        © 2025 Fluxo Vital — Salvando vidas com solidariedade
+        2025 Fluxo Vital — Salvando vidas com solidariedade
     </div>
 
 </body>
