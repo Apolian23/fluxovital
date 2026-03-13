@@ -210,7 +210,6 @@
             display: flex;
         }
 
-        /* Hero Banner */
         .hero-banner {
             background: url('https://images.unsplash.com/photo-1555252333-9f8e92e65df9?q=80&w=2070') center/cover;
             background-size: cover;
@@ -317,7 +316,7 @@
             margin-right: auto;
         }
 
-        /* Cards Grid */
+
         .cards-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -419,7 +418,6 @@
             font-weight: 700;
         }
 
-        /* Locations Section */
         .locations-section {
             background: linear-gradient(135deg, var(--primary), var(--primary-dark));
             color: white;
@@ -600,7 +598,6 @@
             color: var(--white);
         }
 
-        /* Footer */
         footer {
             background: linear-gradient(135deg, #9d040eff 0%, #bb0303ff 100%);
             color: white;
@@ -639,7 +636,6 @@
             color: #d1d5db;
         }
 
-        /* Responsive */
         @media (max-width: 968px) {
             .nav-links {
                 display: none;
@@ -701,7 +697,6 @@
     </style>
 </head>
 <body>
-    <!-- Navbar -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a class="logo" href="/fluxovital/page/home/index.php">
@@ -738,7 +733,6 @@
         <a href="#doacao" class="nav-btn">Quero Doar</a>
     </div>
 
-    <!-- Hero Banner -->
     <section id="inicio" class="hero-banner">
         <div class="banner-content">
             <h1>Doe Leite Materno, Salve Vidas</h1>
@@ -755,7 +749,6 @@
         </div>
     </section>
 
-    <!-- Benefícios -->
     <section id="beneficios">
         <div class="container">
             <h2 class="section-title">Benefícios do Leite Materno</h2>
@@ -796,7 +789,7 @@
         </div>
     </section>
 
-    <!-- Como Doar -->
+
     <section id="doacao" class="donation-section">
         <div class="container">
             <h2 class="section-title">Como Doar Leite Materno</h2>
@@ -837,7 +830,6 @@
         </div>
     </section>
 
-    <!-- Locais -->
     <section id="locais" class="locations-section">
         <div class="container">
             <h2 class="section-title">Encontre um Banco de Leite</h2>
@@ -914,7 +906,6 @@
         </div>
     </section>
 
-    <!-- FAQ -->
     <section id="faq">
         <div class="container">
             <h2 class="section-title">Perguntas Frequentes</h2>
@@ -984,7 +975,6 @@
         </div>
     </section>
 
-    <!-- Seção Sobre -->
     <section id="sobre">
         <div class="container">
             <h2 class="section-title">Sobre a Doação de Leite Materno</h2>
@@ -1010,7 +1000,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer id="contato">
         <div class="container">
             <div class="footer-content">
@@ -1077,13 +1066,11 @@
     </footer>
 
     <script>
-        // Mobile menu toggle
         function toggleMenu() {
             const menu = document.getElementById('mobileMenu');
             menu.classList.toggle('active');
         }
 
-        // Navbar scroll effect
         window.addEventListener('scroll', function() {
             const navbar = document.getElementById('navbar');
             if (window.scrollY > 50) {
@@ -1093,7 +1080,6 @@
             }
         });
 
-        // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -1108,13 +1094,12 @@
             });
         });
 
-        // FAQ accordion - NOVO CÓDIGO
         document.querySelectorAll('.faq-question').forEach(btn => {
             btn.addEventListener('click', () => {
                 const item = btn.parentElement;
                 const isActive = item.classList.contains('active');
                 
-                // Remove 'active' de todos os itens
+    
                 document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
                 
                 // Adiciona 'active' apenas ao item clicado (se não estava ativo)
@@ -1122,7 +1107,6 @@
             });
         });
 
-        // Search locations functionality
         function searchLocations() {
             const searchInput = document.getElementById('searchInput');
             const searchTerm = searchInput.value.toLowerCase().trim();
@@ -1157,14 +1141,12 @@
             }
         }
 
-        // Enter key for search
         document.getElementById('searchInput').addEventListener('keypress', function(e) {
             if (e.key === 'Enter') {
                 searchLocations();
             }
         });
 
-        // Scroll animations
         function animateOnScroll() {
             const elements = document.querySelectorAll('.card, .step, .location-card, .faq-item');
             
@@ -1183,7 +1165,7 @@
             setTimeout(animateOnScroll, 100);
         });
 
-        // Add stagger delay to animations
+
         window.addEventListener('load', function() {
             setTimeout(function() {
                 const cards = document.querySelectorAll('.card');
@@ -1209,7 +1191,6 @@
             }, 100);
         });
 
-        // Parallax effect for hero banner
         window.addEventListener('scroll', function() {
             const scrolled = window.pageYOffset;
             const parallax = document.querySelector('.hero-banner');
@@ -1219,7 +1200,6 @@
             }
         });
 
-        // Add smooth reveal animation to sections
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
