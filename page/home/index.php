@@ -1,5 +1,4 @@
 <?php 
-  // Inclui o cabeçalho padrão do site a partir de um arquivo externo
   include '../../include/header.php'; 
 ?>
 <!DOCTYPE html>
@@ -9,7 +8,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Fluxo Vital</title>
 
-  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
@@ -43,7 +41,6 @@
       overflow-x: hidden;
     }
 
-    /* ========== NAVBAR PREMIUM ATUALIZADA ========== */
     .navbar-premium {
       background: linear-gradient(135deg, #9d040e 0%, #7B1B1B 100%);
       padding: 1rem 0;
@@ -64,7 +61,6 @@
       position: relative;
     }
 
-    /* Logo */
     .navbar-premium .navbar-brand {
       color: white !important;
       font-weight: 900;
@@ -91,7 +87,7 @@
       transform: scale(1.08);
     }
 
-    /* Links de Navegação */
+
     .navbar-premium .nav-link {
       color: rgba(255, 255, 255, 0.95) !important;
       font-weight: 600;
@@ -197,7 +193,6 @@
       box-shadow: 0 8px 30px rgba(255, 255, 255, 0.5);
     }
 
-    /* Toggler Mobile */
     .navbar-toggler {
       border: 2px solid white;
       padding: 0.5rem 0.8rem;
@@ -213,7 +208,6 @@
       filter: brightness(0) invert(1);
     }
 
-    /* ========== BANNER FULL WIDTH ========== */
     .hero-banner-full {
       width: 100%;
       height: 600px;
@@ -304,7 +298,7 @@
       border-radius: 10px;
     }
 
-    /* ========== CONTEÚDO PRINCIPAL ========== */
+
     .main-wrapper {
       max-width: 1400px;
       margin: 0 auto;
@@ -356,7 +350,6 @@
       line-height: 1.8;
     }
 
-    /* ========== CARDS DE DOAÇÃO ========== */
     .cards-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
@@ -507,7 +500,6 @@
       z-index: 1;
     }
 
-    /* ========== SEPARADOR ELEGANTE ========== */
     .elegant-divider {
       margin: 6rem auto;
       text-align: center;
@@ -548,7 +540,6 @@
       50% { transform: scale(1.2); }
     }
 
-    /* ========== SEÇÃO DE RECURSOS ========== */
     .resources-section {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -652,7 +643,6 @@
       box-shadow: 0 12px 35px rgba(157, 4, 14, 0.4);
     }
 
-    /* ========== RODAPÉ LUXUOSO ========== */
     .footer-luxury {
       background: linear-gradient(135deg, #0D0D0D 0%, #1A1A1A 50%, #0D0D0D 100%);
       color: #E0E0E0;
@@ -858,7 +848,6 @@
       font-weight: 700;
     }
 
-    /* ========== RESPONSIVO ========== */
     @media (max-width: 992px) {
       .main-title {
         font-size: 2.5rem;
@@ -923,7 +912,6 @@
 
 <body>
 
-  <!-- ========== NAVBAR PREMIUM ========== -->
   <nav class="navbar navbar-expand-lg navbar-premium">
     <div class="container">
       <a class="navbar-brand" href="#">
@@ -960,7 +948,6 @@
     </div>
   </nav>
 
-  <!-- ========== BANNER FULL WIDTH ========== -->
   <div class="hero-banner-full">
     <div id="carouselBanners" class="carousel slide carousel-fade h-100" data-bs-ride="carousel" data-bs-interval="5000">
       <div class="carousel-indicators">
@@ -988,10 +975,8 @@
     </div>
   </div>
 
-  <!-- ========== CONTEÚDO PRINCIPAL ========== -->
   <main class="main-wrapper">
 
-    <!-- SEÇÃO INTRODUTÓRIA -->
     <section class="section-intro">
       <div class="badge-label">
         <i class="fa-solid fa-heart"></i>
@@ -1006,7 +991,7 @@
       </p>
     </section>
 
-    <!-- CARDS DE DOAÇÃO -->
+  
     <div class="cards-grid">
       <div class="card-donation">
         <div class="icon-circle">
@@ -1048,7 +1033,6 @@
       </div>
     </div>
 
-    <!-- SEPARADOR ELEGANTE -->
     <div class="elegant-divider">
       <div class="divider-line"></div>
       <div class="divider-heart">
@@ -1056,7 +1040,6 @@
       </div>
     </div>
 
-    <!-- SEÇÃO INTRODUTÓRIA RECURSOS -->
     <section class="section-intro">
       <div class="badge-label">
         <i class="fa-solid fa-stars"></i>
@@ -1070,7 +1053,6 @@
       </p>
     </section>
 
-    <!-- SEÇÃO DE RECURSOS -->
     <div class="resources-section">
       <div class="resource-card">
         <div class="resource-icon-box">
@@ -1106,7 +1088,6 @@
       </div>
     </div>
 
-    <!-- SEPARADOR ELEGANTE 2 -->
     <div class="elegant-divider" style="margin: 5rem auto;">
       <div class="divider-line"></div>
       <div class="divider-heart">
@@ -1114,7 +1095,6 @@
       </div>
     </div>
 
-    <!-- SEÇÃO POR QUE DOAR -->
     <section class="section-intro">
       <div class="badge-label">
         <i class="fa-solid fa-question-circle"></i>
@@ -1159,12 +1139,11 @@
 
   </main>
 
-  <!-- ========== RODAPÉ LUXUOSO ========== -->
   <footer class="footer-luxury">
     <div class="footer-container">
       <div class="footer-columns">
         
-        <!-- COLUNA 1: INSTITUCIONAL -->
+  
         <div class="footer-column">
           <h5>Sistema Fluxo Vital</h5>
           <p class="footer-text">
@@ -1190,7 +1169,7 @@
           </div>
         </div>
 
-        <!-- COLUNA 2: NAVEGAÇÃO -->
+
         <div class="footer-column">
           <h5>Navegação</h5>
           <ul class="footer-menu">
@@ -1203,7 +1182,7 @@
           </ul>
         </div>
 
-        <!-- COLUNA 3: CONTATO -->
+
         <div class="footer-column">
           <h5>Entre em Contato</h5>
           <div class="contact-form-box">
@@ -1232,13 +1211,12 @@
       </div>
 
       <div class="footer-end">
-        © 2025 <strong>Fluxo Vital</strong> - Todos os direitos reservados | P.I - GPECOV
+        2025 <strong>Fluxo Vital</strong> - Todos os direitos reservados | P.I - GPECOV
       </div>
     </div>
   </footer>
 
   <script>
-    // Efeito de scroll na navbar
     window.addEventListener('scroll', function() {
       const navbar = document.querySelector('.navbar-premium');
       if (window.scrollY > 50) {
