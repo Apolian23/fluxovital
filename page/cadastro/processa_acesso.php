@@ -15,13 +15,11 @@ if (empty($email) || empty($senha)) {
     exit();
 }
 
-// Validação simples de email
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     echo "<script>alert('Email inválido.'); window.history.back();</script>";
     exit();
 }
 
-// Verifica se o usuário existe
 $stmt = $conn->prepare("SELECT id, nome, senha FROM usuarios WHERE email = ?");
 $stmt->bind_param("s", $email);
 $stmt->execute();
@@ -44,7 +42,6 @@ if ($result->num_rows === 1) {
 
 $stmt->close();
 
-// Se não encontrou -> Cadastra usuário
 $senhaHash = password_hash($senha, PASSWORD_DEFAULT);
 $nomePadrao = 'Usuário';
 
